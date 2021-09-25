@@ -1,13 +1,12 @@
 import React, { useState,useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import Loading from '../../../Components/Loading/Loading';
-import { useDispatch } from 'react-redux';
-import allActions from '../../../Redux/Actions';
+import Loading from '../../../Components/Loading/Loading'
+import Add_Cart from '../../../Components/Add_Cart';
 function Section(props) {
    
   
     const [products,setProducts]=useState([]);
-    var dispatch=useDispatch();
+  
 
   
 useEffect(()=>{
@@ -38,7 +37,7 @@ const filterCate=async ()=>{
                              <Link to={`/product_detail/${value.id}`}>{!value.image ? <Loading/> :<figure><img src={value.image} alt="product picture"/></figure>}</Link>
                              <h5>{value.title}</h5>
                              <h4>price : ${value.price}</h4>
-                             <button className="add-cart-button" onClick={()=>dispatch(allActions.Add_Cart(value.id))}>Add Cart </button>
+                           <Add_Cart id={value}/>
                                </div>
                             )
                         )}
