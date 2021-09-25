@@ -8,7 +8,7 @@ export const Cart=(state=initCart,action)=> {
       case "ADD_TO_CART":
           return{
             ...state,
-            prod:[...state.prod,action.payload],
+            prod:[...state.prod,action.payload]
             
           }
   
