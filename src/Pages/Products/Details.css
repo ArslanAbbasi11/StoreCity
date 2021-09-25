@@ -1,0 +1,126 @@
+.product-detail{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+   
+  
+}
+.main{
+    padding-left: 30px;
+    padding-top: 25px;
+}
+.main h1{
+    text-align: center;
+}
+.info{
+    /* padding-left: 2px; */
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.product-image img{
+    width: 40vw;
+    height: 70vh;
+    transition: transform ease-in-out 0.3s;
+    -webkit-transition: transform ease-in-out 0.3s;
+    -moz-transition: transform ease-in-out 0.3s;
+    -ms-transition: transform ease-in-out 0.3s;
+    -o-transition: transform ease-in-out 0.3s;
+}
+.product-image img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.quantity-btn input{
+    width: 100px;
+    height: 30px;
+}
+.add-btn button{
+    width: 140px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    /* padding: 20px; */
+    transition: all 0.5s;
+    cursor: pointer;
+    /* margin: 5px; */
+}
+.add-btn{
+    padding-left: 20px;
+}
+.add-btn button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .add-btn button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: black;
+  }
+  .add-btn button:hover span {
+    padding-right: 25px;
+  }
+  .add-btn button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+
+.btn-wrap{
+    display: flex;
+    padding-top: 140px;
+}
+.buy-btn{
+    padding-top: 60px;
+    justify-content: center;
+}
+
+.buy-btn button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 500px;
+    height: 60px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.buy-btn button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+ .buy-btn button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    color: black;
+  }
+  .buy-btn button:hover span {
+    padding-right: 25px;
+  }
+  .buy-btn button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
