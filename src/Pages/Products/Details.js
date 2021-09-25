@@ -33,23 +33,23 @@ const Details = () => {
     <div className="main">
     <h1>PRODUCT DETAIL</h1>
     <div className="product-detail">
-      <div className="product-wrap">
         <div className="product-image">
           <img src={product.image}></img>
         </div>
-        </div>
+       
         <div className="info">
+            
         <div className="product-name">
           <h2>{product.title}</h2>
         </div>
         <div className="product-price">
-          <h2>${product.price}</h2>
+          <h3>${product.price}</h3>
         </div>
         <div className="product-category">
-          <h2>{product.category}</h2>
+          <h4>{product.category}</h4>
         </div>
         <div className="product-discription">
-          <h2>{product.description}</h2>
+          <h5><span>DESCRIPTION</span><br/>{product.description}</h5>
         </div>
         <div className="btn-wrap">
       <div className="quantity-btn">
