@@ -2,6 +2,7 @@ import React, { useState,useEffect} from 'react'
 import { Link , useParams} from 'react-router-dom';
 import Loading from '../../Components/Loading/Loading';
 import { useSelector } from 'react-redux'
+import Add_Cart from '../../Components/Add_Cart';
 
 function Category_Details() {
   
@@ -39,7 +40,7 @@ const filterCate=async ()=>{
                               :<figure><img src={value.image} alt="product picture"/></figure>}</Link>
                             <h5>{value.title}</h5>
                              <h4>price : ${value.price}</h4>
-                             <button className="add-cart-button">Add Cart </button>
+                           <Add_Cart id={value}/>
                                </div>
                             )
                         )}

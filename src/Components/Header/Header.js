@@ -5,6 +5,7 @@ import Logo from '../../appLogo.png';
 import { Link } from 'react-router-dom';
 const Header=()=>{
   const categories= useSelector(state=>state.Products.cat[0]);
+  const cartCount= useSelector(state=>state.Cart.prod.length);
 return(
     <header>
         <div className="container">
@@ -13,7 +14,7 @@ return(
               <Link to="/">  <img src={Logo} alt="StoreCity Logo"/></Link>
             </figure>
             <nav>
-        <Link to="/cart">   <button className="cart-button">0</button></Link>
+        <Link to="/cart">   <button className="cart-button">{cartCount}</button></Link>
             <div className="dropdown">
                     <div className="dropbtn">
                          <hr/>
