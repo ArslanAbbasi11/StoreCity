@@ -1,7 +1,8 @@
 import React, { useEffect,useState } from "react";
 import axios from "axios";
 import "./Details.css";
-import { useParams } from "react-router-dom";
+import { useParams,Link } from "react-router-dom";
+import Add_Cart from "../../Components/Add_Cart";
 
 
 const Details = () => {
@@ -70,11 +71,11 @@ const Details = () => {
 </select>
       </div>
       <div className="add-btn">
-      <button class="button"><span>Add TO Cart</span></button>
+      <Add_Cart id={product}/>
       </div>
       </div>
       <div className="buy-btn">
-      <button class="button"><span>BUY NOW</span></button>
+     <Link to="/proceed-checkout"> <button class="button"><span>BUY NOW</span></button></Link>
       </div>
         </div>
       </div>

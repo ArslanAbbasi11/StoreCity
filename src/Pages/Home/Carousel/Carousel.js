@@ -37,7 +37,7 @@ const [index, setIndex] = useState(0);
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {!props.limitProd?.length ? <Loading/> : props.limitProd?.map((value, index) => (
+        { props.limitProd?.map((value, index) => (
        
               <figure  className="slide" key={index} >
                   <img src={value.image} alt="carousel products images"/>

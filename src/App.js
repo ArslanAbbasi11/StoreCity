@@ -9,37 +9,42 @@ import Home from './Pages/Home/Home';
 import Details from './Pages/Products/Details';
 import { useDispatch } from 'react-redux';
 import allActions from './Redux/Actions';
+import BuyNow from './Pages/BuyNow/BuyNow';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   var dispatch= useDispatch();
-  const allObj={
-      typ:"ALL_RODUCTS",
-      val:null
+  const allProdObj={
+    typ:"ALL_RODUCTS",
+    val:null
+}
+  const allCatObj={
+    typ:"ALL_CATEGORIES",
+    val:null
   }
   const limitObj={
-      typ:"LIMIT_RESULT",
-      val:6
-  }
-  const allCatObj={
-      typ:"ALL_CATEGORIES",
-      val:null
-  }
+    typ:"LIMIT_RESULT",
+    val:6
+}
+
+
+
+useEffect(()=>{
+dispatch(allActions.fetchProducts(limitObj));
+
+},[]);
 
   useEffect(()=>{
     
-      dispatch(allActions.fetchProducts(allObj));
-      
+    dispatch(allActions.fetchProducts(allCatObj));
+    
 },[]);
 useEffect(()=>{
-  dispatch(allActions.fetchProducts(limitObj));
+    
+  dispatch(allActions.fetchProducts(allProdObj));
   
 },[]);
-
-  useEffect(()=>{
-    
-      dispatch(allActions.fetchProducts(allCatObj));
-      
-},[]);
+ 
 
   return (
     <>
@@ -49,9 +54,11 @@ useEffect(()=>{
                  <Route path="/" exact component={Home}/>
                  <Route path="/cart" component={Cart}/>
                  <Route path="/product_detail/:id" component={Details}/>
+                 <Route path="/proceed-checkout" component={BuyNow}/>
                  <Route path="/category-details/:category" component={Category_Details}/>
                  <Route  component={Error}/>
               </Switch>
+              <Footer/>
     </div>
     </>
   );

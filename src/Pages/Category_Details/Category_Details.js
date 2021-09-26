@@ -16,7 +16,7 @@ function Category_Details() {
 useEffect(()=>{
     if(allcategory?.length)
     filterCate()
-},[category])
+},[allcategory?.length,category])
 
 const filterCate=async ()=>{
 

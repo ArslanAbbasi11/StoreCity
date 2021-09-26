@@ -69,7 +69,7 @@
     width: 100px;
     height: 30px;
 }
-.add-btn button{
+.detail-wrapper .add-btn button{
     width: 140px;
     height: 30px;
     border-radius: 4px;
@@ -78,21 +78,21 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 15px;
-  
+ 
     transition: all 0.5s;
     cursor: pointer;
-  
+   
 }
-.add-btn{
+.detail-wrapper .add-btn{
     padding-left: 20px;
 }
-.add-btn button span {
+.detail-wrapper .add-btn button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
-  .add-btn button span:after {
+  .detail-wrapper .add-btn button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -128,7 +128,7 @@
     color: #FFFFFF;
     text-align: center;
     font-size: 28px;
-    
+   
     width: 700px;
     height: 60px;
     transition: all 0.5s;

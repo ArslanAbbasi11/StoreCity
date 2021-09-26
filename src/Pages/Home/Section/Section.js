@@ -2,7 +2,8 @@ import React, { useState,useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Loading from '../../../Components/Loading/Loading'
 import Add_Cart from '../../../Components/Add_Cart';
-function Section(props) {
+
+const Section=(props)=> {
    
   
     const [products,setProducts]=useState([]);
@@ -12,7 +13,7 @@ function Section(props) {
 useEffect(()=>{
     if(props.allProd)
     filterCate()
-},[props.cat])
+},[])
 
 const filterCate=async ()=>{
 
@@ -32,7 +33,7 @@ const filterCate=async ()=>{
                   <Link to={`/category-details/${props.cat}`}>  <h1 className="cat-name">{props.cat}</h1></Link>
             <div className="cat-wrapper">
                
-                       {!products?.length ? <Loading/> : products?.map((value,index)=>(
+                       { products?.map((value,index)=>(
                              <div className="product-wrap" key={index}>
                              <Link to={`/product_detail/${value.id}`}>{!value?.image ? <Loading/> : <figure><img src={value.image} alt="product picture"/></figure>}</Link>
                              <h5>{value.title}</h5>
