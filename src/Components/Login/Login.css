@@ -3,9 +3,10 @@
     align-items: center;
     justify-content: center;
     padding-top:10%;
+    padding-bottom: 50px;
 }
 form{
-    background-color: black;
+    background-color: rgba(0, 0, 0,80%);
     padding: 20px;
     border-radius: 10%;
    position: relative;
