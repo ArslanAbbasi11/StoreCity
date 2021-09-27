@@ -16,7 +16,7 @@ const  Add_Cart=(props)=> {
        })
            
             if(!flag){
-                dispatch(allActions.Add_Cart(props.id))
+                dispatch(allActions.add_Cart(props.id))
             }
             else{
                 alert("already added to cart");

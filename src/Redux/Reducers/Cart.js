@@ -1,6 +1,5 @@
 const initCart = {
-   prod:[],
-   count:0
+   prod:[]
  }
  
 export const Cart=(state=initCart,action)=> {
@@ -11,6 +10,12 @@ export const Cart=(state=initCart,action)=> {
             prod:[...state.prod,action.payload]
             
           }
+          case "DELETE":
+            const newArray = [...state.prod]
+            newArray.splice(action.payload,1)
+            return{
+                ...state,prod:newArray
+           }
   
       default:
           return state;

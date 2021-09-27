@@ -11,7 +11,7 @@ return(
         <div className="container">
         <div className="header-inner">
             <figure className="logo">
-              <Link to="/">  <img src={Logo} alt="StoreCity Logo"/></Link>
+              <Link to="/home">  <img src={Logo} alt="StoreCity Logo"/></Link>
             </figure>
             <nav>
         <Link to="/cart">   <button className="cart-button">{cartCount}</button></Link>
@@ -22,7 +22,7 @@ return(
                          <hr/>
                     </div>
            <div className="dropdown-content">
-             <h6> <Link to={'/'}>HOME</Link></h6>
+             <h6> <Link to={'/home'}>HOME</Link></h6>
              <h5>categories </h5>
                   {
                       categories?.map((value)=>(
