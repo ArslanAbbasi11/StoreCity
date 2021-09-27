@@ -13,11 +13,12 @@ const cart = useSelector(state=>state.Cart.prod)
 const dispatch = useDispatch();
 
 useEffect(()=>{
- if(cart.length) calSubTotal();
+ calSubTotal();
 });
 const calSubTotal=()=>{
-  var total=cart.filter((value)=>total+=value.price);
-  setSubTotal(total);
+  var price=0;
+  cart.filter((value)=>price+=value.price);
+  setSubTotal(price);
 }
 console.log(cart+" displayed")
     return (
