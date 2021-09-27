@@ -6,7 +6,7 @@ import dataFile from '../Login/data.txt';
 import { useHistory } from 'react-router';
 
 const Login=()=>{
-  useEffect(()=>alert("use : email : abbasi@gmail.com \n pass : abbasi123 \n or read data.txt file in login component"),[]);
+  useEffect(()=>alert("use : email : abbasi@gmail.com \n pass : abbasi123 \n for other login user : read data.txt file in login component"),[]);
    
     var [isMatched,setMatch]=useState(false);
     var loginCheck=useSelector(state => state.Login.login);
@@ -29,7 +29,7 @@ const Login=()=>{
         for(let i=0;i<user.length;i++){
                 if(user[i].password==input.pass && user[i].username==input.email){
                     console.log("login pass :"+user[i].password);
-                setMatch(isMatched=true);}
+               return  setMatch(isMatched=true);}
                 else  setMatch(isMatched=false);
           }
           
