@@ -67,7 +67,6 @@ checkLogin()
     <Header/>
     <div className="container">
               <Switch>
-             
              <Route path="/" exact  component={Login}/>
               <Route path="/home" component={Home} />
                  <Route path="/cart" component={Cart}/>
