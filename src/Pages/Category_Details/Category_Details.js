@@ -39,6 +39,7 @@ const filterCate=async ()=>{
                              <Link to={`/product_detail/${value.id}`}>{!value?.image ? <Loading/>
                               :<figure><img src={value.image} alt="product picture"/></figure>}</Link>
                             <h5>{value.title}</h5>
+                            <h6>{value.description}</h6>
                              <h4>price : ${value.price}</h4>
                            <Add_Cart id={value}/>
                                </div>

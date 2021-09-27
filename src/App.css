@@ -104,7 +104,7 @@ ul,ol{
   transform: scale(1.1);
   }
 .product-wrap .add-cart-button{   
-  padding: 5px 10px 5px 10px;
+  padding: 3px 4px 3px 4px;
   background-color: white;
   font-size: 18px;
   position: absolute;
@@ -113,6 +113,7 @@ ul,ol{
   border: 2px solid #898989;
 }
 .cat-wrapper .add-cart-button:hover{  
+
    background-color:#49aff3;
    border-color: 49aff3;
    color: #ffffff;
@@ -120,7 +121,7 @@ ul,ol{
 }
 .cat-outer{
     position: relative;
-    margin-top: 200px;
+    margin-top: 20px;
 }
 .btn-more{
   color: rgb(62, 89, 130);
