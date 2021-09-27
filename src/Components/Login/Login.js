@@ -6,7 +6,7 @@ import dataFile from '../Login/data.txt';
 import { useHistory } from 'react-router';
 
 const Login=()=>{
-   
+  useEffect(()=>alert("use : email : abbasi@gmail.com \n pass : abbasi123 \n or read data.txt file in login component"),[]);
    
     var [isMatched,setMatch]=useState(false);
     var loginCheck=useSelector(state => state.Login.login);

@@ -12,6 +12,7 @@ import allActions from './Redux/Actions';
 import BuyNow from './Pages/BuyNow/BuyNow';
 import Footer from './Components/Footer/Footer';
 import Login from './Components/Login/Login';
+import { useHistory } from 'react-router';
 
 function App() {
   var loginCheck=useSelector(state => state.Login.login);
@@ -47,6 +48,18 @@ useEffect(()=>{
   dispatch(allActions.fetchProducts(allProdObj));
   
 },[]);
+
+var loginCheck=useSelector(state => state.Login.login);
+var history=useHistory();
+const checkLogin=()=>{
+      
+  if(loginCheck){
+history.push('/')
+  }
+}
+useEffect(()=>(
+checkLogin()
+))
  
 
   return (
