@@ -1,0 +1,119 @@
+
+.cart-wrapper > h1{
+    padding: 20px 0;
+}
+    
+
+
+.Cart{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.product{
+    display: flex;
+    height: 225px;
+    overflow: hidden; 
+    border: 2px solid #f4511e ;
+    width: 100%;
+}
+.products{
+    flex: 0.75 1;
+    box-shadow: 6px 6px -1px rgb (0 0 0/20%);
+    transform: scale(1.01);
+    max-width: 70%;  
+}
+.product > img{
+    width: 300px;
+    object-fit: cover;
+}
+
+
+.btn-wrap{
+    display: flex;  
+}
+.btn2 button{
+    margin-left: 30px;
+    width: 74px;
+    height: 31px;
+    margin-top: 19px;
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 1px;
+}
+.btn1 button{
+    width: 72px;
+    height: 31px;
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 12px;
+  
+}
+.product-info{
+margin-left: 25px;
+padding: 30px;
+
+}
+.product-name, .product-price{
+    margin-bottom: 10px;
+}
+
+.btn3 button{
+    width: 140px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;   
+}
+.btn3 button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn3 button span:after {
+    content: '\00bb';
+     position: absolute;
+     opacity: 0;
+     top: 0;
+     right: -20px;
+     transition: 0.5s;
+     color: black;
+}
+.btn3 buttonhover span:after{
+        opacity: 1;
+        right: 0;
+}
+
+
+.product-total{
+    border: 2px solid #f4511e;
+    box-shadow: 2px 2px 7px rgb(0 0 0 / 20%);
+    max-width: 100%;
+    flex: 0.25 1;
+    margin-left: 20px;
+    padding: 20px;
+    max-height: 500px;
+    border-radius: 2px;
+
+}
+.product-total p{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
