@@ -59,7 +59,6 @@ useEffect(()=>(
       
             <h2>Login</h2>
            <form onSubmit={(e)=>(e.preventDefault())}>
-
                     <input type="email" placeholder="Email..." value={input.email}
                     onChange={(e)=>setInput({...input,email:e.target.value})}
                     />
