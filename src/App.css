@@ -5,7 +5,7 @@
   margin: 0;
   padding:0;
   scroll-behavior: smooth;
-  font-family: Trattatello;
+ 
 }
 body{
       margin:0;
@@ -47,33 +47,37 @@ ul,ol{
   position: relative;
 }
 .cat-name{
-  position: absolute;
-  z-index: 0;
-  top: -50px;
-  left: 390px;
-  padding: 24px 200px 90px 200px;
-  border-bottom: 1px solid ;
+  margin-left: 168px;
+ padding: 0 0 10px 5px;
+  width: 300px;
+  border-bottom: 1px solid;
 
-  border-bottom: none;
-  color: rgb(255, 111, 0);
+  color: rgb(62, 89, 130);
   background-color: #ffffff;
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+ 
   font-size: 28px;
 }
+
 .product-wrap{
-  box-shadow: 0 0 5px 2px rgb(255 111 0);
+  box-shadow: 0 0 4px 0px rgb(165 165 165);
   padding: 20px;
   height: 340px;
   margin-top: 30px;
   position: relative;
+  transition: .5s ease;
 }
 
 .product-wrap h5{
   width: 230px;
-  font-size: 10px;
+
   margin: 10px 0 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 20px;
+  color: #898989;
+  font-weight: 400;
 }
 .cat-wrapper .product-wrap > figure{
   max-width: 250px;
@@ -92,13 +96,13 @@ ul,ol{
   background-color: white;
   font-size: 18px;
   position: absolute;
-  bottom: -18px;
-  right: 32%;
-  border: 2px solid #f5642f;
+  bottom: 44px;
+  right: 9%;
+  border: 2px solid #898989;
 }
 .cat-wrapper .add-cart-button:hover{  
-   background-color:rgb(255, 111, 0);
-   border-color: rgb(77, 89, 87);
+   background-color:#49aff3;
+   border-color: 49aff3;
    color: #ffffff;
 }
 .cat-outer{
@@ -106,7 +110,7 @@ ul,ol{
     margin-top: 200px;
 }
 .btn-more{
-    color: #f5642f;
+    color: rgb(62, 89, 130);
   position: absolute;
   right: 35px;
   z-index: 1;
@@ -122,7 +126,7 @@ ul,ol{
   -webkit-transform: rotate(-45deg);
 }
 .arrow {
-  border: solid  #f5642f;
+  border: solid  rgb(165 165 165);
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 3px;

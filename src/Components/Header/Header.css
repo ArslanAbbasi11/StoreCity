@@ -2,7 +2,7 @@ header{
   position:sticky;
   padding: 15px 0 15px 0;
  background-color: rgba(0, 0, 0,80%);
-  box-shadow: 0 0 25px 2px rgb(255, 111, 0);
+ 
   z-index: 999;
   top: 0;
   right: 0;
@@ -53,7 +53,7 @@ header ::-webkit-scrollbar{
   padding: 10px;
 }
 .dropbtn hr{
-  border: 2px solid rgb(245, 89, 32);
+  border: 2px solid #dddddd;
   margin: 5px;
 }
 
@@ -66,7 +66,7 @@ header ::-webkit-scrollbar{
   display: none;
   position: absolute;
   right: -15px;
-  background-color: rgba(243, 171, 137, 0.8);
+  background-color: #dddddd;
   min-width: 200px;
   min-height: 300px;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
@@ -100,7 +100,7 @@ header ::-webkit-scrollbar{
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  border-top: 1px solid orangered;
+  border-top: 1px solid rgb(0, 0, 0);
   
 }
 

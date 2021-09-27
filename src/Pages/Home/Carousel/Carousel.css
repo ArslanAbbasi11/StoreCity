@@ -40,7 +40,7 @@
   width: 100%;
   padding: 15px 0 15px 0;
   text-shadow: 0 0 3px #ffae00;
-  background: rgba(253, 128, 11,70%);
+  background: rgb(62, 89, 130,70%);
 }
 
 
@@ -62,5 +62,5 @@
   background-color: #c4c4c4;
 }
 .slideshowDot.active {
-  background-color: #fc6e0f;
+  background-color: rgb(15, 171, 243);
 }
