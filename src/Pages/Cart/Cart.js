@@ -67,7 +67,7 @@ console.log(cart+" displayed")
                     </p>
                     <p>
                         <span>Number of Items</span>
-                        <span>2</span>
+                        <span>{cart.length}</span>
                     </p>
                   
                   <div className="btn3">
