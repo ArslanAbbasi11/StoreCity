@@ -110,14 +110,13 @@ ul,ol{
     margin-top: 200px;
 }
 .btn-more{
-    color: rgb(62, 89, 130);
+  color: rgb(62, 89, 130);
   position: absolute;
-  right: 35px;
+  right: 171px;
   z-index: 1;
-  bottom: 172px;
-  transform: rotate(90deg);
+  bottom: 407px;
   border: 0;
-  background: none;  
+  background: none;
 }
 
 
@@ -130,17 +129,19 @@ ul,ol{
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 3px;
+  animation: moveArrow 1s infinite;
+  position: relative;
 }
 .btn-more .arrow:hover{
-  position: relative;
-  animation: moveArrow 50s 2;
+ 
+  
   padding: 5px;
   
 }
 @keyframes moveArrow {
   0%   { left: 0px; top: 0px;}
-  25%  { left: 200px; top: 0px;}
-  50%  { left: 200px; top: 200px;}
-  75%  { left: 0px; top: 200px;}
+  25%  { left: 10px; top: 0px;}
+  50%  { left: 0px; top: 0px;}
+  75%  { left: 10px; top: 0px;}
   100% { left: 0px; top: 0px;}
 }
