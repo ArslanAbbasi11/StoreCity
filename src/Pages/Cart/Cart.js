@@ -30,7 +30,7 @@ console.log(cart+" displayed")
                 <div className="Cart">
             <div className="products">
              
-                {
+                { !cart.length ? <h4>Cart is Empty </h4> :
                        cart?.map((value,index)=>(
                         
                 <div className="product">
@@ -57,7 +57,7 @@ console.log(cart+" displayed")
                 }
               
             </div>   
-            
+            {!cart.length ? <></>  :
               <div className="product-total">
                   <p>
                       <span>subtotal</span>
@@ -71,7 +71,7 @@ console.log(cart+" displayed")
                   <div className="btn3">
                   <button class="button"><span>Proceed to checkout</span></button>
                   </div>
-                  </div>
+                  </div>}
               </div>
               
             
