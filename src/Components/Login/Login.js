@@ -6,13 +6,13 @@ import dataFile from '../Login/data.txt';
 import { useHistory } from 'react-router';
 
 const Login=()=>{
-  useEffect(()=>alert("use : email : abbasi@gmail.com \n pass : abbasi123 \n for other login user : read data.txt file in login component"),[]);
+  useEffect(()=>alert("for other login user : read data.txt file in login component \n choose email pass for login"),[]);
    
     var [isMatched,setMatch]=useState(false);
     var loginCheck=useSelector(state => state.Login.login);
     const [input,setInput]=useState({
-        email:"",
-        pass:""
+        email:"abbasi@gmail.com",
+        pass:"abbasi123"
     });
     const dispatch=useDispatch();
     var history=useHistory();

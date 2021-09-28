@@ -32,7 +32,7 @@ const filterCate=async ()=>{
 
     return (
       <div className="cat-outer">
-                  <Link to={`/category-details/${props.cat}`}>  <h1 className="cat-name">{props.cat}</h1></Link>
+                  <Link to={`/category-details/${props.cat}`}>  <h1 className="cat-name">{props.cat.toUpperCase()}</h1></Link>
             <div className="cat-wrapper">
                
                        { products?.map((value,index)=>(

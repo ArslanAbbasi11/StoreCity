@@ -118,6 +118,7 @@ ul,ol{
    border-color: 49aff3;
    color: #ffffff;
    cursor: pointer;
+   transition: 1s ease;
 }
 .cat-outer{
     position: relative;
@@ -147,7 +148,7 @@ ul,ol{
   position: relative;
 }
 .btn-more .arrow:hover{
-
+  transition: .5s ease;
 }
 @keyframes moveArrow {
   0%   { left: 0px; top: 0px;}

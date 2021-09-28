@@ -5,10 +5,13 @@ import './Header.css';
 import Logo from '../../appLogo.png';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router';
+import allActions from '../../Redux/Actions';
+import { useDispatch } from 'react-redux';
 const Header=()=>{
   const categories= useSelector(state=>state.Products.cat[0]);
   const cartCount= useSelector(state=>state.Cart.prod.length);
   var loginCheck=useSelector(state => state.Login.login);
+  const dispatch = useDispatch()
 var history=useHistory();
 const checkLogin=()=>{
   if(loginCheck!==true){
@@ -18,6 +21,7 @@ history.push('/')
 useEffect(()=>(
 checkLogin()
 ))
+
 return(
     <header>
         <div className="container">
@@ -41,7 +45,7 @@ return(
                         <Link to={`/category-details/${value}`}>{value}</Link>
                       ))
                   }
-               
+               <button onClick={()=>dispatch(allActions.Login(false)) } className="logout-btn">Logout</button>
            </div>
           </div>
             </nav>

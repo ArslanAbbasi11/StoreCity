@@ -43,7 +43,7 @@ const filterCate=async ()=>{
 
     return (
       <div className="cat-outer">
-            <h1 className="cat-name">{category}</h1>
+            <h1 className="cat-name">{category.toUpperCase()}</h1>
             <div className="cat-wrapper">
                
                        {!products?.length ? <Loading/> : products?.map((value,index)=>(
