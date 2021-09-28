@@ -5,7 +5,7 @@ export const add_Cart=(product)=>{
    }
 }
 export const deleteProduct = (index) => {
-    alert("delete")
+   
     return{
         type: "DELETE",
         payload:index

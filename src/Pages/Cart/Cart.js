@@ -41,19 +41,16 @@ console.log(cart+" displayed")
                   <div className="product-info">
                       <h3 className="product-name">{value.title}{value.id}</h3>
                       <h2 className="product-price">Price : {value.price}</h2>
-                      <div className="btn-wrap">
-            <div className="btn1">
+                
+            <div className="quantity-wrap">
               
-              <button >+ </button>
-              
-            <button >- </button>        
+                          <button  className="quantity-btn">&#8593;</button>
+                         <span>1</span>
+                          <button className="quantity-btn">	&#8595;</button>        
                      </div>
-                     <div className="btn2">
-                     <button type="button" onClick={() => dispatch(allActions.deleteProduct(index))}>Delete</button>
-                     </div>
-                     </div>
+     
                   </div>
-                  
+                  <button className="dlt-btn" type="button" onClick={() => dispatch(allActions.deleteProduct(index))}>&#10006;</button>
                 </div>
                 ))
         

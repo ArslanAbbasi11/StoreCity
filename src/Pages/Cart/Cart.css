@@ -2,22 +2,28 @@
 .cart-wrapper > h1{
     padding: 20px 0;
 }
-    
+    .cart-wrapper{
+       padding: 40px 0 0 0;
+    }
 
 
 .Cart{
     display: flex;
     justify-content: space-between;
     border: 1px solid;
-    max-height: 600px;
-    overflow-y: auto;
+    padding: 20px 0 40px 0;
+   
+   
 }
 .product{
     display: flex;
-    height: 225px;
-    overflow: hidden; 
-    border: 2px solid #f4511e ;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid rgb(165 165 165);
     width: 100%;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 .products{
     flex: 0.75 1;
@@ -34,30 +40,31 @@
 .btn-wrap{
     display: flex;  
 }
-.btn2 button{
-    margin-left: 30px;
-    width: 74px;
-    height: 31px;
-    margin-top: 19px;
-    background-color: #f4511e;
+.quantity-btn{
+    background-color: transparent;
     border: none;
-    color: white;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 24px;
     cursor: pointer;
-    padding: 5px;
-    margin-top: 1px;
+    padding: 5px 0 5px 0;
 }
-.btn1 button{
-    width: 72px;
-    height: 31px;
-    background-color: #f4511e;
+.dlt-btn{
+    color: rgb(248, 92, 92);
+    text-align: center;
+    font-weight: 900;
+    font-size: 39px;
+    margin-left: 20px;
+    background-color: transparent;
     border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 5px;
-    margin-left: 12px;
-  
+    position: absolute;
+    z-index: 1;
+    top: -8px;
+    right: 8px;
+}
+.dlt-btn:hover{
+    color: rgb(218, 2, 2);
+   
+    transition: .5s ease;
 }
 .product-info{
 margin-left: 25px;
@@ -69,16 +76,15 @@ padding: 30px;
 }
 
 .btn3 button{
-    width: 140px;
-    height: 30px;
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: rgb(55 184 193);
     border: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 15px;
     transition: all 0.5s;
-    cursor: pointer;   
+    padding: 12px;
+    cursor: pointer;
 }
 .btn3 button span{
     cursor: pointer;
@@ -95,21 +101,31 @@ padding: 30px;
      transition: 0.5s;
      color: black;
 }
-.btn3 buttonhover span:after{
-        opacity: 1;
-        right: 0;
+.quantity-wrap{
+    max-width: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+
+}
+.quantity-wrap span{
+    border: 1px solid;
+    padding: 5px 10px 5px 10px;
+  
 }
 
 
 .product-total{
-    border: 2px solid #f4511e;
+    border: 2px solid rgb(165 165 165);
     box-shadow: 2px 2px 7px rgb(0 0 0 / 20%);
     max-width: 100%;
     flex: 0.25 1;
     margin-left: 20px;
-    padding: 20px;
-    max-height: 500px;
+    padding: 18px;
+  max-height: 500px;
     border-radius: 2px;
+    position: sticky;
+    top: 80px;
 
 }
 .product-total p{
