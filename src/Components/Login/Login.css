@@ -23,7 +23,7 @@ form input{
 }
 form input[type=submit]{
     margin-top: 100px;
-    background-color: #dddddd
+    background-color: rgb(0, 174, 255)
 }
 .form-wrapper h2{
     position: absolute;
