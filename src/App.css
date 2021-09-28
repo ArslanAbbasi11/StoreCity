@@ -138,6 +138,7 @@ ul,ol{
 .down {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+
 }
 .arrow {
   border: solid  rgb(165 165 165);
@@ -146,10 +147,9 @@ ul,ol{
   padding: 3px;
   animation: moveArrow 1s infinite;
   position: relative;
+ 
 }
-.btn-more .arrow:hover{
-  transition: .5s ease;
-}
+
 @keyframes moveArrow {
   0%   { left: 0px; top: 0px;}
   25%  { left: 10px; top: 0px;}
