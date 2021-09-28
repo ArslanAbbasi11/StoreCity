@@ -15,7 +15,7 @@ import Login from './Components/Login/Login';
 import { useHistory } from 'react-router';
 
 function App() {
-  var loginCheck=useSelector(state => state.Login.login);
+  
   
   var dispatch= useDispatch();
   const allProdObj={
@@ -49,18 +49,7 @@ useEffect(()=>{
   
 },[]);
 
-var loginCheck=useSelector(state => state.Login.login);
-var history=useHistory();
-const checkLogin=()=>{
-      
-  if(loginCheck){
-history.push('/')
-  }
-}
-useEffect(()=>(
-checkLogin()
-))
- 
+
 
   return (
     <>

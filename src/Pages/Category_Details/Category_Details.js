@@ -3,6 +3,7 @@ import { Link , useParams} from 'react-router-dom';
 import Loading from '../../Components/Loading/Loading';
 import { useSelector } from 'react-redux'
 import Add_Cart from '../../Components/Add_Cart';
+import { useHistory } from 'react-router';
 
 function Category_Details() {
   
@@ -28,6 +29,17 @@ const filterCate=async ()=>{
     setProducts(filteredArr);
    
     }
+    var loginCheck=useSelector(state => state.Login.login);
+    var history=useHistory();
+    const checkLogin=()=>{
+      if(loginCheck!=true){
+    history.push('/')
+      }
+    }
+    useEffect(()=>(
+    checkLogin()
+    ))
+       
 
     return (
       <div className="cat-outer">

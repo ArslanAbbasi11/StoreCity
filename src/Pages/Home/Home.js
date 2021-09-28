@@ -1,10 +1,10 @@
 import './Home.css';
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useSelector} from 'react-redux';
 import { Carousel } from './Carousel/Carousel';
 import Section from './Section/Section';
-
-
+import { useHistory } from 'react-router';
+import { useEffect } from 'react';
 import Loading from '../../Components/Loading/Loading';
 
 const  Home=()=> { 
@@ -12,7 +12,16 @@ const  Home=()=> {
     var limitResult=useSelector(state=>state.Products?.limit[0]);
     var allProds=useSelector(state=>state.Products.all[0]);
     var categ=useSelector(state=>state.Products.cat[0]);
-    
+    var loginCheck=useSelector(state => state.Login.login);
+var history=useHistory();
+const checkLogin=()=>{
+  if(loginCheck!=true){
+history.push('/')
+  }
+}
+useEffect(()=>(
+checkLogin()
+))
    
   
    

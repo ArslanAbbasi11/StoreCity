@@ -28,6 +28,8 @@ const filterCate=async ()=>{
    }
     }
 
+  
+
     return (
       <div className="cat-outer">
                   <Link to={`/category-details/${props.cat}`}>  <h1 className="cat-name">{props.cat}</h1></Link>

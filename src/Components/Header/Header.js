@@ -1,11 +1,23 @@
 
 import { useSelector } from 'react-redux'
+import { useEffect } from 'react';
 import './Header.css';
 import Logo from '../../appLogo.png';
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router';
 const Header=()=>{
   const categories= useSelector(state=>state.Products.cat[0]);
   const cartCount= useSelector(state=>state.Cart.prod.length);
+  var loginCheck=useSelector(state => state.Login.login);
+var history=useHistory();
+const checkLogin=()=>{
+  if(loginCheck!==true){
+history.push('/')
+  }
+}
+useEffect(()=>(
+checkLogin()
+))
 return(
     <header>
         <div className="container">
